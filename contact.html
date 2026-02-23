@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Contact | Zachee Nda Nda</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- Tailwind -->
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <!-- Inter Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+
+<body class="bg-gray-50 text-gray-900 font-[Inter]">
+
+  <!-- ================= NAVBAR ================= -->
+  <nav class="bg-white border-b border-gray-200 fixed w-full top-0 z-50">
+    <div class="max-w-7xl mx-auto px-6 py-5 flex justify-between items-center">
+
+      <div>
+        <h1 class="text-lg font-semibold tracking-wide">
+          Zachee Nda Nda
+        </h1>
+        <p class="text-xs text-gray-500">
+          Senior Electrical & Electronics Engineer
+        </p>
+      </div>
+
+      <ul class="hidden md:flex space-x-10 text-sm font-medium text-gray-600">
+        <li><a href="index.html" class="hover:text-black">Home</a></li>
+        <li><a href="about.html" class="hover:text-black">About</a></li>
+        <li><a href="experience.html" class="hover:text-black">Experience</a></li>
+        <li><a href="expertise.html" class="hover:text-black">Expertise</a></li>
+        <li><a href="contact.html" class="text-black font-semibold">Contact</a></li>
+      </ul>
+
+      <button id="menu-btn" class="md:hidden text-gray-700 text-xl">
+        ☰
+      </button>
+    </div>
+
+    <!-- Mobile -->
+    <div id="mobile-menu" class="hidden md:hidden bg-white border-t border-gray-200 px-6 py-4 space-y-4 text-sm">
+      <a href="index.html" class="block">Home</a>
+        <a href="about.html" class="block">About</a>
+      <a href="experience.html" class="block">Experience</a>
+      <a href="expertise.html" class="block">Expertise</a>
+      <a href="contact.html" class="block font-semibold">Contact</a>
+    </div>
+  </nav>
+
+  <!-- ================= HEADER ================= -->
+  <section class="pt-40 pb-16 px-6 bg-white border-b border-gray-200">
+    <div class="max-w-4xl mx-auto text-center">
+      <h2 class="text-4xl font-semibold mb-4">
+        Professional Contact
+      </h2>
+      <p class="text-gray-600 max-w-2xl mx-auto">
+        Open to senior federal engineering leadership, commissioning oversight,
+        and defense contractor opportunities across the United States.
+      </p>
+    </div>
+  </section>
+
+  <!-- ================= CONTACT CONTENT ================= -->
+  <section class="py-20 px-6">
+    <div class="max-w-6xl mx-auto grid lg:grid-cols-2 gap-20 items-start">
+
+      <!-- LEFT PANEL -->
+      <div class="space-y-8">
+
+        <div>
+          <h3 class="text-2xl font-semibold mb-4">
+            Direct Contact Information
+          </h3>
+          <p class="text-gray-600 leading-relaxed">
+            For strategic engineering roles, federal infrastructure leadership,
+            safety compliance consulting, or confidential enterprise discussions,
+            please use the form or contact details below.
+          </p>
+        </div>
+
+        <div class="space-y-6 text-gray-700">
+
+          <div class="border-l-4 border-black pl-4">
+            <p class="text-sm font-medium uppercase tracking-wide text-gray-500">Email</p>
+            <p class="text-lg">zndanda@gmail.com</p>
+          </div>
+
+          <div class="border-l-4 border-black pl-4">
+            <p class="text-sm font-medium uppercase tracking-wide text-gray-500">Phone</p>
+            <p class="text-lg">+237 670 636 878</p>
+          </div>
+
+          <div class="border-l-4 border-black pl-4">
+            <p class="text-sm font-medium uppercase tracking-wide text-gray-500">Location</p>
+            <p class="text-lg">Relocating to United States (SIV Recipient)</p>
+          </div>
+
+        </div>
+
+      </div>
+
+      <!-- RIGHT PANEL (FORM) -->
+      <div class="bg-white p-12 rounded-2xl shadow-sm border border-gray-200">
+
+        <form action="https://formspree.io/f/mykdnllw" method="POST" class="space-y-6">
+
+          <input type="hidden" name="_subject" value="New Enterprise Inquiry - Zachee Nda Nda Portfolio">
+
+          <div>
+            <label class="block text-sm font-medium mb-2">Full Name</label>
+            <input type="text" name="name" required
+              class="w-full border border-gray-300 rounded-lg px-4 py-3 focus:outline-none focus:ring-2 focus:ring-black">
+          </div>
+
+          <div>
+            <label class="block text-sm font-medium mb-2">Email Address</label>
+            <input type="email" name="email" required
+              class="w-full border border-gray-300 rounded-lg px-4 py-3 focus:outline-none focus:ring-2 focus:ring-black">
+          </div>
+
+          <div>
+            <label class="block text-sm font-medium mb-2">Organization</label>
+            <input type="text" name="organization"
+              class="w-full border border-gray-300 rounded-lg px-4 py-3 focus:outline-none focus:ring-2 focus:ring-black">
+          </div>
+
+          <div>
+            <label class="block text-sm font-medium mb-2">Message</label>
+            <textarea name="message" rows="5" required
+              class="w-full border border-gray-300 rounded-lg px-4 py-3 focus:outline-none focus:ring-2 focus:ring-black"></textarea>
+          </div>
+
+          <button type="submit"
+            class="w-full bg-black text-white py-3 rounded-lg font-medium hover:bg-gray-800 transition">
+            Submit Professional Inquiry
+          </button>
+
+        </form>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ================= FOOTER ================= -->
+  <footer class="bg-black text-gray-400 text-center py-6 text-sm">
+    © 2026 Zachee Nda Nda | Federal Engineering Portfolio
+  </footer>
+
+  <!-- Mobile Toggle -->
+  <script>
+    const btn = document.getElementById("menu-btn");
+    const menu = document.getElementById("mobile-menu");
+    btn.addEventListener("click", () => {
+      menu.classList.toggle("hidden");
+    });
+  </script>
+
+</body>
+</html>

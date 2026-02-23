@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>About | Zachee Nda Nda</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- Tailwind -->
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <!-- Inter Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+
+<body class="bg-gray-50 text-gray-900 font-[Inter]">
+
+  <!-- ================= NAVBAR ================= -->
+  <nav class="bg-white border-b border-gray-200 fixed w-full top-0 z-50">
+    <div class="max-w-7xl mx-auto px-6 py-5 flex justify-between items-center">
+
+      <div>
+        <h1 class="text-lg font-semibold tracking-wide">
+          Zachee Nda Nda
+        </h1>
+        <p class="text-xs text-gray-500">
+          Senior Electrical & Electronics Engineer
+        </p>
+      </div>
+
+      <ul class="hidden md:flex space-x-10 text-sm font-medium text-gray-600">
+        <li><a href="index.html" class="hover:text-black">Home</a></li>
+        <li><a href="about.html" class="text-black font-semibold">About</a></li>
+        <li><a href="experience.html" class="hover:text-black">Experience</a></li>
+        <li><a href="expertise.html" class="hover:text-black">Expertise</a></li>
+        <li><a href="contact.html" class="hover:text-black">Contact</a></li>
+      </ul>
+
+      <button id="menu-btn" class="md:hidden text-gray-700 text-xl">
+        ☰
+      </button>
+    </div>
+
+    <!-- Mobile Menu -->
+    <div id="mobile-menu" class="hidden md:hidden bg-white border-t border-gray-200 px-6 py-4 space-y-4 text-sm">
+      <a href="index.html" class="block">Home</a>
+      <a href="about.html" class="block font-semibold">About</a>
+      <a href="experience.html" class="block">Experience</a>
+      <a href="expertise.html" class="block">Expertise</a>
+      <a href="contact.html" class="block">Contact</a>
+    </div>
+  </nav>
+
+  <!-- ================= HEADER ================= -->
+  <section class="pt-40 pb-16 px-6 bg-white border-b border-gray-200">
+    <div class="max-w-4xl mx-auto text-center">
+      <h2 class="text-4xl font-semibold mb-4">
+        About
+      </h2>
+      <p class="text-gray-600 max-w-2xl mx-auto">
+        Federal engineering leader with 15 years of continuous service supporting U.S. diplomatic infrastructure and mission-critical systems.
+      </p>
+    </div>
+  </section>
+
+  <!-- ================= MAIN CONTENT ================= -->
+  <section class="py-20 px-6">
+    <div class="max-w-6xl mx-auto grid lg:grid-cols-2 gap-20">
+
+      <!-- LEFT COLUMN -->
+      <div class="space-y-8">
+
+        <h3 class="text-2xl font-semibold">
+          Professional Background
+        </h3>
+
+        <p class="text-gray-700 leading-relaxed">
+          I am a Senior Electrical & Electronics Engineer with over 15 years of service 
+          within the U.S. Department of State (Embassy Yaoundé). As a Special Immigrant 
+          Visa (SIV) recipient, I bring a fully vetted federal background, deep 
+          understanding of U.S. government safety standards, and proven mission-critical 
+          engineering leadership.
+        </p>
+
+        <p class="text-gray-700 leading-relaxed">
+          My expertise spans electrical infrastructure, building commissioning, 
+          industrial automation, contractor safety oversight, and federal compliance 
+          under USACE EM 385-1-1, NFPA 70E, OSHA 1910, and OBO design criteria.
+        </p>
+
+        <p class="text-gray-700 leading-relaxed">
+          Throughout my career, I have maintained 100% infrastructure uptime during 
+          high-risk regional instability, earning the Mission Eagle Award for technical 
+          excellence and operational reliability.
+        </p>
+
+      </div>
+
+      <!-- RIGHT COLUMN -->
+      <div class="space-y-10">
+
+        <!-- Education -->
+        <div class="bg-white p-8 rounded-2xl shadow-sm border border-gray-200">
+          <h4 class="text-lg font-semibold mb-4">Education</h4>
+          <p class="font-medium">
+            M.Sc. Electronics, Electrotechnics & Automation
+          </p>
+          <p class="text-gray-600 mb-4">
+            University of Dschang
+          </p>
+
+          <p class="font-medium">
+            B.Sc. Electrical Engineering (D.U.T.)
+          </p>
+          <p class="text-gray-600">
+            University of Dschang
+          </p>
+        </div>
+
+        <!-- Federal Credentials -->
+        <div class="bg-white p-8 rounded-2xl shadow-sm border border-gray-200">
+          <h4 class="text-lg font-semibold mb-4">Federal Credentials</h4>
+
+          <ul class="space-y-3 text-gray-700">
+            <li>• USACE EM 385-1-1 Contractor Safety Oversight</li>
+            <li>• NFPA 70E Electrical Hazard Specialist</li>
+            <li>• FEMP / WBDG Commissioning Certified</li>
+            <li>• OSHA 1910 Familiarization</li>
+            <li>• 15+ Years Continuous U.S. Government Vetting</li>
+          </ul>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ================= FOOTER ================= -->
+  <footer class="bg-black text-gray-400 text-center py-6 text-sm">
+    © 2026 Zachee Nda Nda | Federal Engineering Portfolio
+  </footer>
+
+  <!-- Mobile Toggle -->
+  <script>
+    const btn = document.getElementById("menu-btn");
+    const menu = document.getElementById("mobile-menu");
+    btn.addEventListener("click", () => {
+      menu.classList.toggle("hidden");
+    });
+  </script>
+
+</body>
+</html>
