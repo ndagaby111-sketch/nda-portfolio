@@ -8,13 +8,49 @@
   <!-- Tailwind CDN -->
   <script src="https://cdn.tailwindcss.com"></script>
 
-  <!-- Professional Font -->
+  <!-- Google Font -->
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
 
-  <link rel="stylesheet" href="style.css">
+  <!-- ================= ANIMATION STYLES ================= -->
+  <style>
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      font-family: 'Inter', sans-serif;
+    }
+
+    /* Fade Up Animation */
+    .fade-up {
+      opacity: 0;
+      transform: translateY(40px);
+      transition: all 0.8s ease;
+    }
+
+    .fade-up.show {
+      opacity: 1;
+      transform: translateY(0);
+    }
+
+    /* Button Hover Animation */
+    .btn-animate {
+      transition: all 0.3s ease;
+    }
+
+    .btn-animate:hover {
+      transform: translateY(-4px);
+    }
+
+    /* Smooth Mobile Menu */
+    #mobile-menu {
+      transition: all 0.4s ease;
+    }
+  </style>
+
 </head>
 
-<body class="bg-gray-100 text-gray-900 font-[Inter]">
+<body class="bg-gray-50 text-gray-900">
 
   <!-- ================= NAVBAR ================= -->
   <nav class="bg-white border-b border-gray-200 fixed w-full top-0 z-50">
@@ -29,49 +65,56 @@
         </p>
       </div>
 
+      <!-- Desktop Menu -->
       <ul class="hidden md:flex space-x-10 text-sm font-medium text-gray-600">
-        <li><a href="index.html" class="hover:text-black">Home</a></li>
-        <li><a href="about.html" class="hover:text-black">About</a></li>
-        <li><a href="experience.html" class="hover:text-black">Experience</a></li>
-        <li><a href="expertise.html" class="hover:text-black">Expertise</a></li>
-        <li><a href="contact.html" class="hover:text-black">Contact</a></li>
+        <li><a href="#home" class="hover:text-black transition">Home</a></li>
+        <li><a href="#about" class="hover:text-black transition">About</a></li>
+        <li><a href="#experience" class="hover:text-black transition">Experience</a></li>
+        <li><a href="#expertise" class="hover:text-black transition">Expertise</a></li>
+        <li><a href="#contact" class="hover:text-black transition">Contact</a></li>
       </ul>
 
-      <button id="menu-btn" class="md:hidden text-gray-700 text-xl">
+      <!-- Mobile Toggle Button -->
+      <button id="menu-btn" class="md:hidden text-gray-700 text-2xl focus:outline-none">
         ☰
       </button>
     </div>
 
     <!-- Mobile Menu -->
     <div id="mobile-menu" class="hidden md:hidden bg-white border-t border-gray-200 px-6 py-4 space-y-4 text-sm">
-        <a href="index.html" class="block">Home</a>
-      <a href="about.html" class="block">About</a>
-      <a href="experience.html" class="block">Experience</a>
-      <a href="expertise.html" class="block">Expertise</a>
-      <a href="contact.html" class="block">Contact</a>
+      <a href="#home" class="block">Home</a>
+      <a href="#about" class="block">About</a>
+      <a href="#experience" class="block">Experience</a>
+      <a href="#expertise" class="block">Expertise</a>
+      <a href="#contact" class="block">Contact</a>
     </div>
   </nav>
 
   <!-- ================= HERO ================= -->
-  <section class="pt-40 pb-28 px-6 bg-white">
-    <div class="max-w-4xl mx-auto text-center">
-      <h2 class="text-4xl md:text-5xl font-semibold leading-tight mb-6">
+  <section id="home" class="pt-44 pb-32 px-6 bg-white text-center fade-up">
+    <div class="max-w-4xl mx-auto">
+      <h2 class="text-4xl md:text-6xl font-semibold leading-tight mb-8">
         Engineering Leadership for Mission-Critical Infrastructure
       </h2>
 
-      <p class="text-lg text-gray-600 leading-relaxed">
+      <p class="text-lg md:text-xl text-gray-600 leading-relaxed max-w-3xl mx-auto">
         15-Year U.S. Embassy Veteran | Special Immigrant Visa (SIV) Recipient |
         Federal Safety & Commissioning Specialist
       </p>
+
+      <div class="mt-10">
+        <a href="#contact" class="btn-animate px-8 py-3 bg-black text-white rounded-md text-sm font-medium">
+          Connect Professionally
+        </a>
+      </div>
     </div>
   </section>
 
   <!-- ================= ABOUT ================= -->
-  <section id="about" class="py-24 px-6">
+  <section id="about" class="py-28 px-6 fade-up">
     <div class="max-w-4xl mx-auto">
-      <h3 class="text-2xl font-semibold mb-8">Professional Profile</h3>
-
-      <p class="text-gray-700 leading-relaxed">
+      <h3 class="text-3xl font-semibold mb-10">Professional Profile</h3>
+      <p class="text-gray-700 leading-relaxed text-lg">
         Strategic Electrical & Electronics Engineer with 15 years of progressive
         leadership supporting U.S. diplomatic infrastructure. Specialized in
         EM 385-1-1 contractor oversight, NFPA 70E compliance, federal building
@@ -81,82 +124,92 @@
   </section>
 
   <!-- ================= EXPERIENCE ================= -->
-  <section id="experience" class="bg-white py-24 px-6 border-t border-gray-200">
+  <section id="experience" class="bg-white py-28 px-6 border-t border-gray-200 fade-up">
     <div class="max-w-5xl mx-auto">
-      <h3 class="text-2xl font-semibold mb-12">Professional Experience</h3>
+      <h3 class="text-3xl font-semibold mb-16">Professional Experience</h3>
 
-      <div class="space-y-12">
-
+      <div class="space-y-16">
         <div>
-          <h4 class="font-semibold text-lg">
+          <h4 class="font-semibold text-xl">
             U.S. Department of State – Safety Program Lead
           </h4>
-          <p class="text-sm text-gray-500 mb-4">2014 – Present</p>
-
-          <ul class="space-y-2 text-gray-700">
-            <li>• Directed SHEM safety program execution for U.S. Mission infrastructure.</li>
-            <li>• Enforced EM 385-1-1 compliance for federal contractors.</li>
-            <li>• Designed electronic validation systems for 100+ facilities.</li>
-            <li>• Managed lifecycle safety and procurement budget.</li>
+          <p class="text-sm text-gray-500 mb-6">2014 – Present</p>
+          <ul class="space-y-3 text-gray-700 leading-relaxed">
+            <li>• Directed SHEM safety program execution.</li>
+            <li>• Enforced EM 385-1-1 compliance.</li>
+            <li>• Designed validation systems for 100+ facilities.</li>
+            <li>• Managed lifecycle safety budget.</li>
           </ul>
         </div>
-
-        <div>
-          <h4 class="font-semibold text-lg">
-            Senior Engineering Consultant – T.S. Energie Services
-          </h4>
-          <p class="text-sm text-gray-500 mb-4">2015 – 2024</p>
-
-          <ul class="space-y-2 text-gray-700">
-            <li>• Produced AutoCAD-based electrical system designs.</li>
-            <li>• Conducted hardware acceptance and high-potential isolation testing.</li>
-            <li>• Managed engineering changes through SAP systems.</li>
-          </ul>
-        </div>
-
       </div>
     </div>
   </section>
 
   <!-- ================= EXPERTISE ================= -->
-  <section id="expertise" class="py-24 px-6">
+  <section id="expertise" class="py-28 px-6 fade-up">
     <div class="max-w-5xl mx-auto">
-      <h3 class="text-2xl font-semibold mb-12">Core Expertise</h3>
+      <h3 class="text-3xl font-semibold mb-16">Core Expertise</h3>
 
-      <div class="grid md:grid-cols-3 gap-12 text-gray-700">
-
+      <div class="grid md:grid-cols-3 gap-12 text-gray-700 text-lg">
         <div>
-          <h4 class="font-medium mb-4">Engineering</h4>
+          <h4 class="font-semibold mb-4">Engineering</h4>
           <p>Power Electronics, Automation Systems, Load Analysis, Commissioning.</p>
         </div>
-
         <div>
-          <h4 class="font-medium mb-4">Federal Standards</h4>
+          <h4 class="font-semibold mb-4">Federal Standards</h4>
           <p>EM 385-1-1, NFPA 70E, OSHA 1910, OBO Criteria, FEMP Guidelines.</p>
         </div>
-
         <div>
-          <h4 class="font-medium mb-4">Technical Systems</h4>
+          <h4 class="font-semibold mb-4">Technical Systems</h4>
           <p>AutoCAD 2D/3D, SAP Engineering Systems, Acceptance Testing.</p>
         </div>
-
       </div>
     </div>
   </section>
 
   <!-- ================= CONTACT ================= -->
-  <section id="contact" class="bg-gray-900 text-white py-24 px-6 text-center">
-    <h3 class="text-2xl font-semibold mb-6">Contact</h3>
-    <p class="text-gray-300">zndanda@gmail.com</p>
-    <p class="text-gray-300">+237 670636878</p>
-    <p class="mt-6 text-sm text-gray-500">Relocating to the United States</p>
+  <section id="contact" class="bg-gray-900 text-white py-28 px-6 text-center fade-up">
+    <h3 class="text-3xl font-semibold mb-6">Contact</h3>
+    <p class="text-gray-300 text-lg">zndanda@gmail.com</p>
+    <p class="text-gray-300 text-lg">+237 670636878</p>
+    <p class="mt-8 text-sm text-gray-500">Relocating to the United States</p>
   </section>
 
   <!-- ================= FOOTER ================= -->
-  <footer class="bg-black text-gray-400 text-center py-6 text-sm">
+  <footer class="bg-black text-gray-500 text-center py-6 text-sm">
     © 2026 Zachee Nda Nda | Enterprise Engineering Portfolio
   </footer>
 
-  <script src="script.js"></script>
+  <!-- ================= JAVASCRIPT ================= -->
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+
+      const btn = document.getElementById("menu-btn");
+      const menu = document.getElementById("mobile-menu");
+
+      // Mobile Toggle
+      btn.addEventListener("click", function () {
+        menu.classList.toggle("hidden");
+        btn.innerHTML = menu.classList.contains("hidden") ? "☰" : "✕";
+      });
+
+      // Scroll Animation
+      const faders = document.querySelectorAll(".fade-up");
+
+      const observer = new IntersectionObserver(entries => {
+        entries.forEach(entry => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add("show");
+          }
+        });
+      }, { threshold: 0.2 });
+
+      faders.forEach(section => {
+        observer.observe(section);
+      });
+
+    });
+  </script>
+
 </body>
 </html>
